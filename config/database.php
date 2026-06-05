@@ -1,13 +1,14 @@
 <?php
 
 $conn = mysqli_connect(
-    "sql310.infinityfree.com",
-    "if0_42106029",
-    "2122taliban",
-    "if0_42106029_transport_logistics"
+    getenv('MYSQLHOST'),
+    getenv('MYSQLUSER'),
+    getenv('MYSQLPASSWORD'),
+    getenv('MYSQLDATABASE'),
+    getenv('MYSQLPORT')
 );
 
 if (!$conn) {
-    die("Database connection failed: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
 }
 ?>
