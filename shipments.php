@@ -227,7 +227,8 @@ if(isset($_GET['deleted'])){
 
 if(isset($_GET['search'])){
 
-    $search = mysqli_real_escape_string($conn, $_GET['search']);
+    $search = trim($_GET['search']);
+$search = mysqli_real_escape_string($conn, $search);
 
     $shipments = mysqli_query($conn,
 
