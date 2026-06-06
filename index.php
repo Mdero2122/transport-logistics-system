@@ -729,7 +729,7 @@ animation:slideIn 1s ease;
     <a href="vehicles.php">Vehicles</a>
     <a href="drivers.php">Drivers</a>
     <a href="fuel.php">Fuel Calculator</a>
-   <a href="/transport-logistics-system/logout.php">Logout</a>
+   <a href="/logout.php">Logout</a>
     <a href="report.php"
    target="_blank">
 
