@@ -6,7 +6,7 @@ session_unset();
 
 session_destroy();
 
-header("Location: /transport-logistics-system/auth/login.php");
+header("Location: /auth/login.php");
 
 exit();
 
